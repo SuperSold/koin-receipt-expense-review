@@ -38,10 +38,8 @@ To publish later changes, sign in with `eas login` and run `eas update --branch 
 - `App.tsx` keeps this focused prototype self-contained: receipt editing state stays local until confirmation, and the expense feed updates only after validation succeeds.
 - Prices are represented as integer cents, avoiding floating-point accumulation errors. Amounts use tabular numerals and are formatted as USD.
 - React Native `KeyboardAvoidingView`, safe areas, Expo Image Picker, and a category selection sheet cover the main platform interactions.
-- The assignment brief and design references are preserved in `assignment/`.
 
 ## Design references
 
-- `assignment/Koin_Engineering_Challenge.pdf`
 - `assignment/Koin_Expenses.png`
 - `assignment/Koin_Review_receipt.png`
