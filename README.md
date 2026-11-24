@@ -21,6 +21,8 @@ The published preview includes Android and iOS bundles. Install Expo Go, then sc
 
 You can also [open the published update in the Expo dashboard](https://expo.dev/accounts/mubashir_4/projects/koin-expenses/updates/d7a1276c-e941-46b2-8c35-e42b6a25c724) and select **Preview** to show the QR code. The update is published on the `preview` branch for runtime version `1.0.0`.
 
+**Access note:** Expo Go requires testers to sign in with an Expo account that owns this project or is a member of its owning organization. Reviewers without project access will need to be granted access through an Expo organization before the QR can open for them.
+
 To publish later changes, sign in with `eas login` and run `eas update --branch preview --message "Describe the update" --environment preview`. For a temporary development session instead, run `npm run preview` and keep the terminal open while testers use its generated QR code.
 
 ## Try the review flow
