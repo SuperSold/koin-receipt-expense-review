@@ -15,7 +15,7 @@
       }
     },
     "android": {
-      "permissions": ["CAMERA"],
+      "permissions": ["android.permission.CAMERA"],
       "adaptiveIcon": {
         "backgroundColor": "#F4F1EA"
       }
@@ -29,6 +29,17 @@
           "microphonePermission": false
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "45046f78-c7ca-440c-853c-bc7a438cda95"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/45046f78-c7ca-440c-853c-bc7a438cda95"
+    }
   }
 }

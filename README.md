@@ -13,15 +13,15 @@ npm start
 
 Scan the Expo Go QR code, or press `i` / `a` in the Expo terminal to open an available simulator. The camera and gallery actions request the matching device permission. On a simulator, Gallery is the easiest way to try an image; the app shows that image as the receipt thumbnail.
 
-## Easy testing preview (Expo Go)
+## Easy testing build (Expo Go)
 
-Sign in to an Expo account once with `eas login`, then run:
+The published preview includes Android and iOS bundles. Install Expo Go, then scan this QR code from your device camera to open the receipt-review flow:
 
-```sh
-npm run preview
-```
+![Scan with Expo Go to open the Koin preview](https://qr.expo.dev/eas-update?projectId=45046f78-c7ca-440c-853c-bc7a438cda95&groupId=d7a1276c-e941-46b2-8c35-e42b6a25c724&slug=exp)
 
-Expo CLI prints a QR code and an `exp://` link. Scan the QR with Expo Go on iOS or Android, or share the link with a tester. Keep the command running while testers use the app; the tunnel preview is temporary and a new link is generated each time it starts. For an iOS or Android simulator, use `npm start` and press `i` or `a` instead.
+You can also [open the published update in the Expo dashboard](https://expo.dev/accounts/mubashir_4/projects/koin-expenses/updates/d7a1276c-e941-46b2-8c35-e42b6a25c724) and select **Preview** to show the QR code. The update is published on the `preview` branch for runtime version `1.0.0`.
+
+To publish later changes, sign in with `eas login` and run `eas update --branch preview --message "Describe the update" --environment preview`. For a temporary development session instead, run `npm run preview` and keep the terminal open while testers use its generated QR code.
 
 ## Try the review flow
 
