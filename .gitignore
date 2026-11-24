@@ -1,0 +1,7 @@
+node_modules/
+.expo/
+dist/
+web-build/
+.env
+assignment/__MACOSX/
+*.DS_Store

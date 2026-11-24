@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Koin Expenses",
+    "slug": "koin-expenses",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F4F1EA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Koin uses the camera to scan expense receipts."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "backgroundColor": "#F4F1EA"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Koin accesses your photos so you can scan expense receipts.",
+          "cameraPermission": "Koin uses your camera to scan expense receipts.",
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
