@@ -13,6 +13,16 @@ npm start
 
 Scan the Expo Go QR code, or press `i` / `a` in the Expo terminal to open an available simulator. The camera and gallery actions request the matching device permission. On a simulator, Gallery is the easiest way to try an image; the app shows that image as the receipt thumbnail.
 
+## Easy testing preview (Expo Go)
+
+Sign in to an Expo account once with `eas login`, then run:
+
+```sh
+npm run preview
+```
+
+Expo CLI prints a QR code and an `exp://` link. Scan the QR with Expo Go on iOS or Android, or share the link with a tester. Keep the command running while testers use the app; the tunnel preview is temporary and a new link is generated each time it starts. For an iOS or Android simulator, use `npm start` and press `i` or `a` instead.
+
 ## Try the review flow
 
 - Tap **Scan Bill** and choose **Take a photo** or **Choose from gallery**. The upload card also has Camera and Gallery shortcuts.
